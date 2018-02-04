@@ -15,7 +15,7 @@ requires 'DateTime::Format::ISO8601';
 requires 'URL::Encode';
 requires 'URL::Encode::XS';
 requires 'URI::Template';
-requires 'Config::INI';
+requires 'Config::AWS';
 requires 'Digest::SHA';
 # For the paws CLI
 requires 'Hash::Flatten';

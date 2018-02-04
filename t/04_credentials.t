@@ -166,6 +166,13 @@ delete @ENV{qw(
 
 {
 	my $creds = Paws::Credential::File->new(
+		credentials_file => 't/04_credentials/credentials.nested',
+	);
+	is $creds->config->{parent}{child}, 'value for child', 'File: nested value loaded correctly';
+}
+
+{
+	my $creds = Paws::Credential::File->new(
 		path => 't/04_credentials/',
 		file_name => 'credentials.alternate',
 	);
